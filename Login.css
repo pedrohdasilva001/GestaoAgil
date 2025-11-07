@@ -35,25 +35,15 @@ body {
     max-width: 400px; 
     text-align: center;
 }
-
-
 .login-header {
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
-
-.app-title {
-    font-size: 2.2rem;
-    color: var(--color-primary);
-    margin-bottom: 5px;
-    font-weight: 700;
+.acesso1 {
+    color: #90d0d8;
+    font: 30px Arial;
+    margin-top: 25px;
 }
-
-.login-header h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #666;
-}
-
 
 .input-group {
     text-align: left;
@@ -110,6 +100,14 @@ body {
     margin-top: 30px;
     font-size: 0.9rem;
     color: #666;
+}
+.logo1 {
+    width: 160px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+
 }
 
 .login-footer a {
