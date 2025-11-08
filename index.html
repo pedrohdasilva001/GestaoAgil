@@ -4,48 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Task | Login</title>
-
     <script src="Login.js"></script>
-
     <link rel="stylesheet" href="Login.css">
-    <link rel="stylesheet" href="images/logott.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-    <div class="login-container">
-        
-        <header class="login-header">
-           <img src="images/logott.png" alt="Logo" class="logo1">
-           <h2 class="acesso1">Acesse sua conta</h2>
-           
+    <div class="caixote-login">
+        <header class="cabecalho-login">
+            <img src="images/logott.png" alt="Logo" class="imagem-logo">
+            <h2 class="titulo-acesso">Acesse sua conta</h2>
         </header>
 
-        
-        <form class="login">
-            <div class="input-group">
+        <form id="formulario-de-login">
+            <div class="grupo-de-input">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu email" required>
             </div>
 
-            <div class="input-group">
+            <div class="grupo-de-input">
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" placeholder="********" required>
             </div>
 
-            <div class="checkbox-group">
+            <div class="caixinha-de-marcar">
                 <input type="checkbox" id="remember" name="remember">
                 <label for="remember">Lembrar de mim</label>
             </div>
 
-            <button type="submit" class="login-button">Entrar</button>
+            <button type="button" class="botao-entrar" href="#" onclick="painel()">Entrar</button>
         </form>
 
-        <footer class="login-footer">
-            <a href="#">Esqueceu sua senha?</a>
-            <p>Novo por aqui? <a href="#">Crie sua conta</a></p>
+        <footer class="rodape-login" style="margin-top: 25px;">
+            <a href="#" onclick="forget()">Esqueceu sua senha?</a>
+            <p>Novo por aqui? <a href="#" onclick="criacao()">Crie sua conta</a></p>
         </footer>
     </div>
-    
 </body>
 </html>

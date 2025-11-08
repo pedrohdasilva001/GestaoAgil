@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel | Team Task</title>
+    
+    <link rel="stylesheet" href="painel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="images/logott.png" alt="Team Task Logo">
+        </div>
+        <div class="navbar-user">
+            <span>Olá, Pedro!</span>
+            <img src="https://placehold.co/40x40/B0E0E6/333?text=P" alt="Avatar" class="user-avatar">
+            <a href="index.html" class="logout-button">Sair</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="dashboard-header">
+            <h1>Painel de Tarefas</h1>
+            <button class="add-task-button">+ Nova Tarefa</button>
+        </section>
+        <section class="kanban-board">
+            <div class="kanban-column" id="column-todo">
+                <h2>A Fazer</h2>
+                <div class="task-list">
+                    <div class="task-card">
+                        <h4>Revisar design da página</h4>
+                        <p>Verificar a responsividade mobile</p>
+                        <div class="task-meta">
+                            <span class="task-priority high">Alta Prioridade</span>
+                            <img src="https://placehold.co/30x30/B0E0E6/333?text=A" alt="Avatar Ana" title="Ana">
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <h4>Planejar Sprint 05</h4>
+                        <p>Definir backlog e objetivos da próxima sprint.</p>
+                        <div class="task-meta">
+                            <span class="task-priority medium">Média Prioridade</span>
+                            <img src="https://placehold.co/30x30/333/FFF?text=B" alt="Avatar Bruno" title="Bruno">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanban-column" id="column-inprogress">
+                <h2>Em Andamento</h2>
+                <div class="task-list">
+                    <div class="task-card">
+                        <h4>Desenvolver API de autenticação</h4>
+                        <p>Implementar funções de login com a API</p>
+                        <div class="task-meta">
+                            <span class="task-priority high">Alta Prioridade</span>
+                            <img src="https://placehold.co/30x30/B0E0E6/333?text=P" alt="Avatar Pedro" title="Pedro">
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <h4>Testes de cada módulo de pagamento</h4>
+                        <p>Garantir cobertura de 80% dos testes.</p>
+                        <div class="task-meta">
+                            <span class="task-priority low">Baixa Prioridade</span>
+                            <img src="https://placehold.co/30x30/333/FFF?text=C" alt="Avatar Carla" title="Carla">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanban-column" id="column-done">
+                <h2>Concluído</h2>
+                <div class="task-list">
+                    <div class="task-card">
+                        <h4>Definir paleta de cores do app</h4>
+                        <p>Reunião de definição da identidade visual.</p>
+                        <div class="task-meta">
+                            <span class="task-priority medium">Média Prioridade</span>
+                            <img src="https://placehold.co/30x30/B0E0E6/333?text=A" alt="Avatar Ana" title="Ana">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Team Task | Recuperar Senha</title>
+    
+    <link rel="stylesheet" href="forget.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cadastro-container">
+        
+        <header class="cadastro-header">
+            <img src="images/logott.png" alt="Logo Team Task" class="logo">
+            <h2>Recuperar Senha</h2>
+        </header>
+
+        <form class="cadastro-form">
+            <p class="texto-explicativo">
+                Insira seu e-mail e enviaremos um link para redefinir sua senha.
+            </p>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Insira o email da conta perdida" required>
+            </div>
+            <button type="button" class="cadastro-button" onclick="login()">Enviar Link</button>
+        </form>
+        <footer class="cadastro-footer">
+            <p>Lembrou a senha? <a href="#" onclick="login()">Fazer Login</a></p>
+        </footer>
+    </div>
+    <script src="Login.js"></script>
+</body>
+</html>

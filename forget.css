@@ -1,28 +1,31 @@
 :root {
-    --cor-primaria: #B0E0E6; 
-    --cor-escura: #333333; 
-    --cor-clara: #ffffff; 
-    --fundo-pagina: #f4f7f9; 
-    --fundo-card: #ffffff;
-    --fonte-padrao: 'Inter', sans-serif;
+    --color-primary: #B0E0E6; 
+    --color-text-dark: #333333; 
+    --color-text-light: #ffffff; 
+    --color-background: #f4f7f9; 
+    --color-card-bg: #ffffff;
+    --font-family: 'Inter', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: var(--fonte-padrao);
-    background-color: #f4f7f9;
-    color: #333333;
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-text-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
 }
-.caixa-principal {
-    background-color: #ffffff;
+
+.cadastro-container { 
+    background-color: var(--color-card-bg);
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -30,85 +33,100 @@ body {
     max-width: 400px; 
     text-align: center;
 }
-.topo-da-pagina {
+
+.cadastro-header {
     margin-bottom: 30px;
 }
-.imagem-principal {
-    width: 160px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.logo { 
+    width: 150px; 
+    height: auto;
+    margin-bottom: 20px; 
 }
-.topo-da-pagina h2 {
+
+.cadastro-header h2 { 
     font-size: 1.5rem; 
     font-weight: 600;
     color: #444; 
 }
-.grupo-campo {
+.texto-explicativo {
+    font-size: 0.95rem;
+    color: #666; 
+    line-height: 1.5;
+    margin-bottom: 25px; 
+    text-align: center;
+}
+
+.input-group {
     text-align: left;
     margin-bottom: 20px;
 }
-.grupo-campo label {
+
+.input-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
     font-size: 0.9rem;
 }
-.grupo-campo input {
+
+.input-group input {
     width: 100%;
     padding: 12px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     font-size: 1rem;
+    font-family: var(--font-family);
     transition: border-color 0.3s;
 }
-.grupo-campo input:focus {
-    border-color: #B0E0E6;
+
+.input-group input:focus {
+    border-color: var(--color-primary);
     outline: none;
     box-shadow: 0 0 0 3px rgba(176, 224, 230, 0.5); 
 }
-.botao-cadastrar {
+
+.cadastro-button { 
     width: 100%;
     padding: 14px;
-    background-color: #B0E0E6;
-    color: #333333;
+    background-color: var(--color-primary);
+    color: var(--color-text-dark);
     border: none;
     border-radius: 8px;
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
+    font-family: var(--font-family);
     transition: background-color 0.3s, transform 0.1s;
     margin-top: 10px;
 }
-.botao-cadastrar:hover {
+
+.cadastro-button:hover {
     background-color: #90d0d8; 
 }
-.botao-cadastrar:active {
+
+.cadastro-button:active {
     transform: scale(0.99);
 }
-.rodape-cadastro {
+
+.cadastro-footer { 
     margin-top: 30px;
     font-size: 0.9rem;
     color: #666;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
 }
-.rodape-cadastro p {
-    margin: 0;
-}
-.rodape-cadastro a {
-    color: #B0E0E6;
+
+.cadastro-footer a { 
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
-.rodape-cadastro a:hover {
+
+.cadastro-footer a:hover {
     color: #333333; 
 }
+
 @media (max-width: 450px) {
-    .caixa-principal {
+    .cadastro-container { 
         padding: 30px 20px;
         border-radius: 0; 
         box-shadow: none;

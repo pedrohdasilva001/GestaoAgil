@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Task | Cadastro</title>
+
+    <link rel="stylesheet" href="signin.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="caixa-principal">
+        
+        <header class="topo-da-pagina">
+            <img src="images/logott.png" alt="Logo" class="imagem-principal">
+            <h2>Crie sua conta</h2>
+        </header>
+
+        <form id="form-de-cadastro">
+            
+            <div class="grupo-campo">
+                <label for="campo-nome">Nome Completo:</label>
+                <input type="text" id="campo-nome" name="nome" placeholder="Seu nome e sobrenome" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="campo-email">E-mail:</label>
+                <input type="email" id="campo-email" name="email" placeholder="seu.email@equipe.com" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="campo-senha">Senha:</label>
+                <input type="password" id="campo-senha" name="password" placeholder="********" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="campo-confirma">Confirme sua Senha:</label>
+                <input type="password" id="campo-confirma" name="confirmar-senha" placeholder="********" required>
+            </div>
+
+            <button type="submit" class="botao-cadastrar" onclick="login()">Cadastrar</button>
+        </form>
+
+        <footer class="rodape-cadastro">
+            <p>Já tem uma conta?</p> 
+            <a href="#" id="link-login" onclick="login()"> Fazer login</a>
+        </footer>
+    </div>
+    
+    <script src="Login.js"></script>
+</body>
+</html>
